@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(141, 86, 86);
+}
+
+h1{
+    font-size: 3rem !important;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.gameBoard{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    margin: 20px auto;
+    max-width: 300px;
+    gap: 2px;
+}
+
+.cell{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    font-size: 4rem;
+    justify-content: center;
+    background-color: rgb(135, 179, 232);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.btn-primary{
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 20%;
+    border-radius: 20px;
+    align-items: center;
+    margin-left: 40%;
+    transition: ease-in-out 0.5s;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    background-color: rgb(135, 179, 232);
+}
+
+.btn-primary:hover{
+    background-color: rgb(56, 109, 223);
+    color: white;
+    cursor: pointer;
+}
+
+.cell:hover{
+    background-color: rgb(56, 109, 223);
+    cursor: pointer;
+}
+
